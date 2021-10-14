@@ -1,0 +1,102 @@
+
+html{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,*:after,*:before{
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing:inherit;
+  box-sizing:inherit;
+color: #f4f4f4;
+}
+
+body{
+  margin: 0;
+   padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+  background: #222222;
+  padding: 10px 40px 10px 7px;
+  border: 1px solid #000;
+  border-left: none;
+  border-right: none;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li.logo{
+flex: 1;
+font-size: 2rem;
+font-size: 30px;
+font-weight: 700;
+
+}
+nav ul div.items{
+display: inline-flex;
+padding: 0 25px;
+margin: 10px;
+}
+nav ul div.items a{
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+
+}
+nav ul div.items a:hover{
+  color: cyan;
+}
+
+nav ul .search-icon{
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+nav ul .search-icon input {
+  height: 100%;
+  width: 240px;
+  border: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #000;
+  border-radius: 5px 0 0 5px;
+}
+nav ul .search-icon .icon {
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #cccccc;
+  border-radius: 0 5px 5px 0;
+}
+nav ul .search-icon .icon:hover{
+  background: #060606;
+  cursor: pointer;
+}
+
+nav ul .search-icon span{
+  color: #222222;
+  font-size: 1rem;
+}
+
+@media screen and (max-width:1052px){
+  nav{
+    padding: 10px 40px 10px  0px;
+  }
+
+  nav ul li.logo{
+      display: none;
+  }
+  nav ul div.items{
+      flex: 4;
+  }
+}
